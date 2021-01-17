@@ -1,0 +1,881 @@
+    1  java -version
+    2  ping
+    3  ping google.com
+    4  java --verison
+    5  java --version
+    6  java -version
+    7  javac -version
+    8  mkdir dir1 dir2 dir3
+    9  cd dir
+   10  cd dir1
+   11  ls
+   12  touch a
+   13  ls
+   14  cd ..
+   15  cd dir2
+   16  touch b
+   17  cd ..
+   18  cd dir1
+   19  touch ../dir3 c
+   20  ls ../dir3
+   21  touch ../dir3/c
+   22  sudo apt install tree
+   23  cd ..
+   24  tree
+   25  tree dir2
+   26  cwd
+   27  pwd
+   28  cl
+   29  clear
+   30  ls
+   31  cd cd/
+   32  cd /
+   33  ls
+   34  cd ~
+   35  ls
+   36  mkdir dir1 dir2 dir3
+   37  sl
+   38  ls
+   39  cd ~/Desktop/playground/
+   40  tree
+   41  man tree
+   42  tree / L 1
+   43  sudo su
+   44  pwd
+   45  grep error *2> /dev/null
+   46  man -An -N1 -tu1 dev/urandom
+   47  od -An -N1 -tu1 dev/urandom
+   48  od dev/urandom
+   49  cd~
+   50  cd ~
+   51  od
+   52  cd ~
+   53  od -An -N1 /dev/urandom
+   54  man od
+   55  od -Ad /dev/urandom
+   56  od -Ad -N5 /dev/urandom
+   57  od -Ad -N5 -tu1 /dev/urandom 
+   58  echo "hello" >> /dev/full
+   59  gedit
+   60  ps
+   61  jobs
+   62  geany
+   63  geany bg
+   64  bg geany
+   65  geany &
+   66  job
+   67  kill %1
+   68  ps -aux
+   69  pc -aux | less
+   70  ps -aux | grep firefox
+   71  apt firefox
+   72  apt install firefox
+   73  ping google
+   74  ping google.com
+   75  ps -aux | grep ping
+   76  ping google.com
+   77  pgrep
+   78  pgrep bash
+   79  xargs
+   80  echo "3940" | xrargs kill
+   81  echo "3940" | xargs kill
+   82  sudo apt install
+   83  sudo apt install p7zip
+   84  man z7
+   85  man 7z
+   86  ll
+   87  ls
+   88  tar dir1 dir2 -f dirs
+   89  tar -c dir1 dir2 -f dirs.tar
+   90  dzip dirc.tar
+   91  ls
+   92  rm dirs.tar
+   93  tar -c dir1 dir2 | dzip >dirs.tar.gz
+   94  tar -c dir1 dir2 | gzip >dirs.tar.gz
+   95  lsa
+   96  ls
+   97  cd /
+   98  ls
+   99  /usr/include
+  100  cd /usr/include
+  101  ls
+  102  cat stdio.h
+  103  cat dialog.h
+  104  grep used dialog.h
+  105  cd ~
+  106  cd playground
+  107  ls
+  108  cd desktop/playground
+  109  cd Desktop/playground
+  110  ls
+  111  geany mosh.txt
+  112  grep moshe mosh.txt
+  113  echo ABS 6.txt
+  114  echo ABS >> 6.txt
+  115  cat 6.txt
+  116  od 6.txt
+  117  od -tu1 6.txt
+  118  file 6.txt
+  119  alias rm="rm -1"
+  120  rm 1.txt
+  121  ls
+  122  rm a.txt
+  123  unalias rm
+  124  a.txt
+  125  rm a.txt
+  126  ls
+  127  alias rm="rm -i"
+  128  rm b.txt
+  129  ls
+  130  sudo fdisk -l
+  131  sudo fdisk
+  132  man fdisk
+  133  q
+  134  sudo fdisk -l
+  135  lsblk
+  136  cd /media
+  137  ls
+  138  cd vera
+  139  ls
+  140  umount /media/shmuel/linux mint
+  141  umount /media/vera/linux mint
+  142  umount /media/vera/"linux mint"
+  143  cd mnt
+  144  cd /
+  145  cd mnt
+  146  sudo mkdir myusb
+  147  ls
+  148  ll
+  149  sudo mount /dev/sdb1 /mnt/myusb
+  150  fdisk -l
+  151  cd /
+  152  fdisk -l
+  153  sudo apt install openssh-server
+  154  sudo systemctl ststus ssh
+  155  sudo systemctl status ssh
+  156  geany hello.sh &disong
+  157  cdmod +x hello.sh
+  158  chmod +x hello.sh
+  159  ls
+  160  SHEBANG #1
+  161  file hello.sh
+  162  ./hello.sh
+  163  whereis python3
+  164  ls
+  165  touch ~/docs/a.txt b.txt
+  166  man touch
+  167  touch ~/docs/b.txt
+  168  echo :error 123" >>~/logs/error.log
+  169  echo "error 123" >>~/logs/error.log
+  170  echo "error 453" >>~/logs/error.log
+  171  echo "gghhhj" >>~/logs/error.log
+  172  echo "jjkkj" >>~/logs/error1.log
+  173  echo "error j" >>~/logs/error1.log
+  174  cd logs
+  175  mv error.log error2.log
+  176  ls
+  177  echo "login error" >>login.log
+  178  grep -r -n error logs/*.log
+  179  ln -s logs soft_logs
+  180  ls
+  181  cd soft_logs
+  182  ls
+  183  cd ~
+  184  ln -s -t . logs/*
+  185  ls
+  186  cat error1.log
+  187  ln docs/* /~
+  188  ln docs/* ~
+  189  ln docs/* .
+  190  rm a.txt b.txt
+  191  ls
+  192  ln docs/* /~
+  193  ln docs/* ~
+  194  ll docs  logs
+  195  ll docs/*  logs/*
+  196  chmod ug=rwx,o= b.txt
+  197  ll b.txt
+  198  touch ./docs/c.txt
+  199  ll ./docs/c.txt
+  200  chmod ug=rwx,o= ./docs/b.txt
+  201  ll ./docs/b.txt
+  202  chmod rwx ./docs/a.txt
+  203  chmod =rwx ./docs/a.txt
+  204  ll ./docs/a.txt
+  205  chmod 777 ./docs/a.txt
+  206  ll ./docs/a.txt
+  207  chmod 000 ./docs/a.txt
+  208  ll ./docs/a.txt
+  209  chmod a+rwx ./docs/a.txt
+  210  ll ./docs/a.txt
+  211  chmod 000 ./docs/b.txt
+  212  cat ./docs/b.txt
+  213  chmod u=r ./docs
+  214  ll docs
+  215  ll
+  216  chmod u=r,go= ./docs
+  217  ll
+  218  cd docs
+  219  chmod u=rwx,g=xr,o=x ./docs
+  220  ll ./docs
+  221  ll
+  222  ~chmod 731  ./docs
+  223  chmod 731  ./docs
+  224  ll
+  225  chmod 751  ./docs
+  226  ll
+  227  mkdir dir0
+  228  ll dir0
+  229  ll
+  230  chmod 771  ./docs
+  231  ll
+  232  chmod 775  ./docs
+  233  ll
+  234  chmod u=rwx,g=xr,o=x ./docs
+  235  ll
+  236  cd docs
+  237  ll
+  238  cd -
+  239  ll
+  240  cd docs
+  241  chmod g=r docs
+  242  chmod g=r /docs
+  243  chmod g=r ./docs
+  244  cd~
+  245  cd ~
+  246  chmod g=r ./docs
+  247  ll
+  248  chmod g+xr ./docs
+  249  ll
+  250  chmod g+r /docs
+  251  chmod g+r docs
+  252  ll
+  253  ll "docs"
+  254  ll
+  255  chmod o+r docs
+  256  chmod o+r logs
+  257  ll
+  258  chmod o+x docs
+  259  chmod o+x logs
+  260  ll
+  261  chmod 000 docs
+  262  chmod u=wrx,g=xr,o=x docs
+  263  ll
+  264  chmod g+r docs
+  265  ll docs
+  266  cd docs
+  267  cd ~
+  268  chmod -R wrx-,o=wrx ./docs/*
+  269  chmod -R ug-wrx,o=wrx ./docs/*
+  270  ll
+  271  cd docs
+  272  ll
+  273  cd docs
+  274  vi c.txt
+  275  ps -ux
+  276  kill 2266
+  277  vi aa.txt
+  278  jobs
+  279  gedit d.txt
+  280  jobs
+  281  man vi
+  282  vi info
+  283  info vi
+  284  jobs
+  285  gedit c.txt
+  286  jobs
+  287  fg 3
+  288  fg 2
+  289  gedit cc.txt
+  290  pst
+  291  ps
+  292  pc -aux
+  293  ps -aux
+  294  ps -au
+  295  ps
+  296  ps -aux |grep bash
+  297  ps -au |grep bash
+  298  kill 2331
+  299  kill -9 2331
+  300  geany try.sh
+  301  bash try.sh
+  302  geany try.sh
+  303  sudo fdisk -l
+  304  lsblk
+  305  sudo mount /dev/sdb1 /mnt/myusb/
+  306  ls
+  307  cd myusb/
+  308  sudo mount /dev/sdb1 /mnt/myusb/
+  309  cd mnt
+  310  ls
+  311  cd mnt
+  312  ls
+  313  cd myusb
+  314  ls
+  315  nemo
+  316  nemo .
+  317  df -h
+  318  df
+  319  du
+  320  q
+  321  apt search net-tool
+  322  ifconfig -a
+  323  router
+  324  route
+  325  sudo apt install openssh-server
+  326  tty
+  327  sudo systemctl disable SSH
+  328  sudo systemctl start
+  329  sudo systemctl start SSH
+  330  sudo systemctl start ssh
+  331  sudo systemctl disable ssh
+  332  sudo systemctl start ssh
+  333  sudo systemctl disable ssh
+  334  iperf -c 127.0.0.1
+  335  minicom -s
+  336  minicom
+  337  sudo apt search minicom
+  338  sudo apt install minicom
+  339  minicom -s
+  340  lspci
+  341  lspci -v
+  342  lspci -vt
+  343  lspci -t
+  344  lspci -tbv
+  345  cat /etc/resolv.conf
+  346  service ssh status
+  347  iperf
+  348  sudo apt install iperf
+  349  iperf
+  350  iperf -s
+  351  man scp
+  352  env
+  353  set
+  354  env |grep PATH
+  355  echo $PATH
+  356  PATH=/home/vera:$PATH
+  357  echo $PATH
+  358  grep -r -n error logs/*.log
+  359  cd /
+  360  grep -r -n vera:
+  361  bash numbers_compare.sh 
+  362  bash numbers_compare.sh 5 7
+  363  bash numbers_compare.sh 8 2
+  364  bash numbers_compare.sh 10 3
+  365  bash max2.sh 0.5 2.3
+  366  bash max3.sh 2 7
+  367  geany leap.sh
+  368  bash leap.sh  2019
+  369  bash leap.sh  2020
+  370  bash leap.sh  2020 mm
+  371  geany menu.sh
+  372  bash menu.sh 
+  373  cp menu.sh menu2.sh
+  374  geany menu2.sh 
+  375  bash menu2.sh 
+  376  cd ~
+  377  cd loops
+  378  cd bash/loops
+  379  geany for.sh
+  380  b
+  381  mkdir dir1 dir2 dir4
+  382  touch a b c d
+  383  bash -- version
+  384  bash --version
+  385  alias geany='geany &'
+  386  geany
+  387  bash sum_arg.sh 4 7
+  388  cd /bash/loops
+  389  cd bash/loops
+  390  bash sum_arg.sh 4 7
+  391  bash sum_args.sh 4 7
+  392  geany t.sh
+  393  cd for_args_in_depth
+  394  cd ..
+  395  cd for_args_in_depth
+  396  cd for_args_in\ depth/
+  397  bash for_args1.sh aa dd bbb ggg
+  398  bash for_args2.sh aa dd bbb ggg
+  399  cp for_args2.sh for_args3
+  400  geany for_args3.sh 
+  401  geany *3.sh
+  402  bash for_args3.sh aa dd bbb ggg
+  403  cd ..
+  404  cd loop
+  405  cd loops
+  406  geany while_read.sh
+  407  touch a b c 123.txt 456.txt 789.txt
+  408  echo "inside 123" >> 123.txt
+  409  echo "inside 456" >> 456.txt
+  410  echo '!!!!!inside 7891111' >> 789.txt
+  411  bash while_find1.sh
+  412  ls
+  413  bash avg_args.sh 100 37 50
+  414  bash avg_args.sh 
+  415  bash avg_args.sh 100 37 50
+  416  bash avg_args.sh 
+  417  bash avg_args.sh 100 37 50
+  418  bash avg_args.sh 
+  419  bash avg_args.sh 100 37 50
+  420  bash avg_from_file.sh scores.txt
+  421  bash avg_from_file.sh 
+  422  bash avg_from_file.sh scores.txt
+  423  bash avg_from_file.sh score
+  424  bash avg_from_file.sh gghj
+  425  bash avg_from_file.sh scores.txt
+  426  bash avg_from_file.sh file
+  427  bash avg_from_files.sh scores.txt scores2.txt
+  428  bash avg_from_files.sh scores.txt scores2.txt files
+  429  bash avg_from_files.sh scores.txt scores2.txt jjj
+  430  bash avg_from_files.sh scores.txt 
+  431  bash avg_from_files.sh scores2.txt 
+  432  bash avg_from_files.sh scores.txt scores2.txt jjj
+  433  bash avg_from_files.sh scores.txt scores2.txt
+  434  bash avg_from_files.sh scores2.txt
+  435  if [ ! -f "args" ]; then if [ ! -f "scores.txt" ]; then No; fi if [ ! -f "args" ]; then if [ ! -f "scores.txt" ]; then No;else yes; fi; if [ ! -f "scores.txt" ]; then No; fi if [ ! -f "args" ]; then if [ ! -f "scores.txt" ]; then No;else yes; fi
+  436  if [ ! -f "scores.txt" ]; then No;else yes; fi
+  437  bash avg_from_files.sh scores2.txt
+  438  if [ ! -f "scores2.txt" ]; then No;else yes; fi
+  439  bash avg_from_files.sh scores2.txt scores.txt
+  440  bash avg_from_files.sh scores2.txt files
+  441  bash avg_from_files.sh hhh
+  442  bash avg_from_files.sh
+  443  cd ..
+  444  cd trap
+  445  bash trap1.sh 
+  446  cd ~
+  447  cd playground
+  448  grep -P '\w+@\w+\.\w+' moshe.txt
+  449  bash mass_rename.sh 
+  450  bash mass_rename.sh 112
+  451  cd play
+  452  bash mass_rename.sh 112
+  453  cd ..
+  454  cd dir1
+  455  bash mass_rename.sh 112
+  456  bash mass_rename.sh dir1 111
+  457  bash mass_rename.sh 111 dir1
+  458  bash mass_rename.sh 
+  459  bash mass_rename.sh *.* 11
+  460  bash mass_rename.sh *.* .
+  461  cd ..
+  462  bash mass_rename.sh dir1
+  463  bash mass_rename.sh dir1 7
+  464  bash mass_rename.sh 7 dir1
+  465  bash mass_rename.sh /* 7 dir1
+  466  bash mass_rename.sh * 7 dir17
+  467  cd ..
+  468  cd bash_exercises/
+  469  bash small_files.sh ~/
+  470  w
+  471  man test
+  472  ls
+  473  cd bash
+  474  ls
+  475  bash_examples/
+  476  bash_examples
+  477  cd bash_examples
+  478  cd play
+  479  cd args
+  480  cd play
+  481  touch a b c d f
+  482  ./pycharm.sh
+  483  cd bash
+  484  ls
+  485  bash args.hs
+  486  bash hello.sh
+  487  geany hello.sh
+  488  geany jjj.bh
+  489  man xterm
+  490  man grep
+  491  ifconfig
+  492  2*3
+  493  a=2*3
+  494  $a
+  495  a=((2*3))
+  496  a=(( 2 * 3 ))
+  497  a=[ 2*3 ]
+  498  a=bc(2*3)
+  499  a=bc( 2*3 )
+  500  a=$[ 2*3 ]
+  501  a=
+  502  $a
+  503  echo $a
+  504  a=$[ 2*3 ]
+  505  echo $a
+  506  a="*"
+  507  num1=2
+  508  num2=3
+  509  a1=$[ $num1 $a $num ]
+  510  a1=$[ num1 a num2 ]
+  511  a1=$[ $num1 $a $num2 ]
+  512  echo $a1
+  513  cd ~
+  514  sudo apt install python3 python3-tk python3-pip
+  515  py3
+  516  python3
+  517  which python
+  518  which python3
+  519  ll
+  520  pip3 --version
+  521  for i in {5..50..5}; do     echo "Welcome $i"; done
+  522  Fruits=('Apple' 'Banana' 'Orange')
+  523  Fruits=("${Fruits[@]}" "Watermelon")
+  524  echo ${!Fruits[@]}
+  525  echo ${Fruits[@]}  
+  526  Fruit[0]='pitch'
+  527  echo ${Fruits[@]}  
+  528  Fruits[0]='pitch'
+  529  echo ${Fruits[@]}  
+  530  ls
+  531  cd ~/Desktop
+  532  ls
+  533  ls -l
+  534  for file in "$desk"/*; do     if [ -d "$file" ]; then         echo "$file" DIR         fi
+  535  man tar
+  536  cd Desktop
+  537  tar -cvzf arch.tar.dz test
+  538  tar -ztf arch.tar.dz
+  539  tar -xvzf arch.tar.dz
+  540  man date
+  541  date
+  542  date "+%(flag)-%(flag)-%(flag)"
+  543  cd ~
+  544  cd /home/vera/Desktop/2020/2020-October/2020-October-16
+  545  desk="~/Desktop"
+  546  echo $desk
+  547  cd $desk
+  548  cd "$desk"
+  549  cd '$desk'
+  550  cd `$desk`
+  551  cd /home/vera/Desktop/2020/2020-October/2020-October-16
+  552  cd /Desktop
+  553  cd ~/Desktop
+  554  tar -cvzf dd.tar.gz 2020/
+  555  cd /home/vera/Desktop/2020/2020-October/2020-October-16
+  556  tar -cvzf dd.tar.gz ~/Desktop
+  557  tar -cvzf dd.tar.gz /Desktop
+  558  tar -cvzf dd.tar.gz Desktop
+  559  bakup=cd 2020/2020-October/2020-October-16/bacup.tar.gz Desktop
+  560  bakup=2020/2020-October/2020-October-16
+  561  bakup="2020/2020-October/2020-October-16"
+  562  tar -cvzf $bakup/dd.tar.gz Desktop
+  563  tar -cvzf $bakup/dd.tar.gz .
+  564  tar -cvzf $bakup/dd.tar.gz 
+  565  tar -cvzf $bakup/dd.tar.gz ./
+  566  bakup=cd 2020/2020-October/2020-October-16/bacup.tar.gz /Desktop
+  567  bakup=cd 2020/2020-October/2020-October-16/bacup.tar.gz ~/Desktop
+  568  cd ~
+  569  bakup=cd 2020/2020-October/2020-October-16/bacup.tar.gz ~/Desktop
+  570  bakup=cd 2020/2020-October/2020-October-16/bacup.tar.gz /Desktop
+  571  bakup=cd 2020/2020-October/2020-October-16/bacup.tar.gz Desktop
+  572  tar -cvzf $bakup/dd.tar.gz ~/Desktop
+  573  tar -cvzf 2020/dd.tar.gz ~/Desktop
+  574  tar -cvzf /2020/dd.tar.gz ~/Desktop
+  575  tar -cvzf /2020/dd.tar.gz Desktop
+  576  tar -c -z Desktop -f $bakup/bacup.tar.gz
+  577  tar -c -z Desktop -f /"$bakup"/bacup.tar.gz
+  578  tar -c -z Desktop -f bacup.tar.gz
+  579  grep bacup.tar.gz
+  580  ls
+  581  tar -cvzf /test/2020/bacup.tar.gz /test
+  582  cd $bakup
+  583  cd test/$bakup
+  584  tar -cvzf bacup.tar.gz ~/test
+  585  ls
+  586  tar -cvzf bacup.tar.gz /test
+  587  tar -cvzf bacup.tar.gz test
+  588  tar -cvzf bacup.tar.gz /Desktop/test
+  589  tar -cvzf bacup.tar.gz ~/Desktop/test
+  590  cd ~/test
+  591  tar -cvzf bacup.tar.gz ~/test
+  592  cd test/$bakup
+  593  ls
+  594  tar -cvtf bacup.tar.gz
+  595  tar -zvtf bacup.tar.gz
+  596  cd $bakup
+  597  tar -cvzf bacup.tar.gz ~/test
+  598  ls
+  599  tar -zvtf bacup.tar.gz
+  600  cd 2020
+  601  echo $bakup
+  602  cd Desktop
+  603  cd $bakup
+  604  ls
+  605  tar -zvtf bacup.tar.gz
+  606  tar -zvtf bacup1.tar.gz
+  607  tar -zvxf bacup1.tar.gz
+  608  cd ~/Desktop
+  609  cd test
+  610  cd ~
+  611  cd test
+  612  mkdir $((DATE +"%Y")/(DATE + "%B")/(Date +"%d"))
+  613  d=DATE +"%Y"
+  614  d=$(DATE +"%Y")
+  615  d=$(date +"%Y")
+  616  mkdir #d
+  617  mkdir $d
+  618  cd Desktop
+  619  man mkdir
+  620  cd test
+  621  ls
+  622  cd 2020
+  623  ls
+  624  cd ..
+  625  cd 2020
+  626  cd 2020-October
+  627  cd ../..
+  628  cd ..
+  629  ls
+  630  cd 1test
+  631  bash calc.sh
+  632  bash calc.sh a + 8
+  633  bash calc.sh 3 + 8
+  634  b=+
+  635  echo "$b"
+  636  b="+"
+  637  echo "$b"
+  638  ls
+  639  cd 1test
+  640  bash calc_ex.sh 3 + 9
+  641  bash calc_ex.sh 3 - 9
+  642  bash calc_ex.sh 3 / 9
+  643  bash calc_ex.sh 27 / 9
+  644  bash calc_ex.sh 27 \* 9
+  645  bash calc_ex.sh 27 n 9
+  646  n + 0
+  647  bash calc_ex.sh  n - 9
+  648  bash calc.sh  n - 9
+  649  bash calc.sh 12 - 9
+  650  bash calc.sh 12 + 9
+  651  bash calc.sh 12 / 9
+  652  bash calc.sh 12 * 9
+  653  bash calc.sh 12 \* 9
+  654  bash calc.sh 12 / 0
+  655  bash calc.sh 12 / 2
+  656  bash calc.sh 12 / 0
+  657  ls
+  658  ls *.log
+  659  ll *.log
+  660  ll *.txt
+  661  cd log
+  662  cd logs
+  663  ls
+  664  cd ..
+  665  ll */*.txt
+  666  ll */*.log
+  667  ls -lS */*.txt
+  668  man ls
+  669  ls -Sh */*.txt
+  670  ls -Shl */*.txt
+  671  ls -lSh */*.txt
+  672  ls -lS */*.txt
+  673  ls -l */*.txt
+  674  ls -lS */*.txt
+  675  cat logs/error1.log
+  676  cat docs/a.txt>docs/b.txt
+  677  cat docs/b.txt
+  678  cat docs/a.txt>docs/b.txt
+  679  cat docs/b.txt
+  680  cat docs/a.txt>>docs/b.txt
+  681  cat docs/b.txt
+  682  find -name "*.logs"|grep error
+  683  find  . -name "*.logs"|grep error
+  684  man find
+  685  find -name *.logs | grep error
+  686  find -name */*.logs | grep error
+  687  find  */*.logs | grep error
+  688  find  *.logs | grep error
+  689  find . *.logs | grep error
+  690  find ~ -name  *.logs | grep error
+  691  find -name ~  *.logs | grep error
+  692  find -name ~  *.log | grep error
+  693  find -wholename *.log | grep error
+  694  find . -wholename *.log | grep error
+  695  find . -wholename "*.log" | grep error
+  696  find. -name  " *.log" | grep error
+  697  find . -name  " *.log" | grep error
+  698  find . -name  "*.log" | grep error
+  699  grep -r -n error *.log
+  700  find ~ -name “*.log” | xargs grep error
+  701  find /home/vera/ -name “*.log” | xargs grep error
+  702  find . -name “*.log” | xargs grep error
+  703  find . -name “*.log” | xargs cat error
+  704  find . -name “*.log” | xargs cat
+  705  find . -name “*.log” | cat
+  706  find . -name “*.log” 
+  707  find . -name  "*.log" | grep error
+  708  find . -name  "*.log"
+  709  find . -name  "*.log" | cat
+  710  find . -name  "*.log" | xarg grep error
+  711  find . -name  "*.log" | xargs grep error
+  712  find . -name  "*.log" | xargs grep error >>&2
+  713  find . -name  "*.log" | xargs grep error &2>dev/null
+  714  find . -name  "*.log" | xargs grep error 
+  715  find /home/vera -name  "*.log" | xargs grep error 
+  716  find . -name  "*.log" -exec grep error {} ;
+  717  find . -name  "*.log" -exec grep error {} ";"
+  718  find . -name  "*.log" -exec grep error {} "+"
+  719  find . -name  "*.log" -exec grep error {} "+" 2>/dev/null
+  720  find . -name  "*.txt" | xargs cat
+  721  find . -name  "*.txt" -exec cat {} ";"
+  722  find /new-dir -name  "*.txt" -exec cat {} ";"
+  723  find new-dir -name  "*.txt" -exec cat {} ";"
+  724  env
+  725  set
+  726  echo $PATH
+  727  env |grep PATH
+  728  version 'uname-r'
+  729  version= 'uname-r'
+  730  version=`uname-r`
+  731  uname -r
+  732  version=`uname -r`
+  733  tologs=/home/vera/logs
+  734  echo $tologs
+  735  alias
+  736  find /home a.txt
+  737  find /home "a.txt"
+  738  grep -r a.txt
+  739  grep -r "a.txt"
+  740  grep -r -n "a.txt"
+  741  man grep
+  742  find . "a.txt"
+  743  find  "a.txt"
+  744  man find
+  745  find -name "a.txt"
+  746  who
+  747  w
+  748  whoami
+  749  groups
+  750  groups [vera]
+  751  groups <vera>
+  752  ifconfig -a
+  753  ping walla.co.il
+  754  ifconfig
+  755  ifconfig eth0 192.168.10.2/24
+  756  ifconfig enp0s3 192.168.10.2/24
+  757  ping localhost
+  758  ping 192.168.10.2
+  759  ifconfig
+  760  ping 10.0.2.15
+  761  route
+  762  mount
+  763  dmesg|grep -i eth
+  764  strace mkdir folder
+  765  lsmod
+  766  echo "the value of x is:\:SX\""
+  767  man test
+  768  kill -SIGUSR1
+  769  kill -SIGUSR1 7021
+  770  kill -SIGUSR2 7021
+  771  kill -INT 7021
+  772  man kill
+  773  kill 7021
+  774  rm -f
+  775  man rm
+  776  grep -l ERR $x
+  777  grep -l ERR .
+  778  grep -l ERR *
+  779  stat --format=%s
+  780  stat --format=%s .
+  781  man stat
+  782  stat --format=%sz ./*
+  783  stat --format=%s%z ./*
+  784  stat --format=%s%z --name ./*
+  785  man stat
+  786  stat --format=%s%z%n ./*
+  787  stat --format=%n%s ./*
+  788  stat --format=%n %s ./*
+  789  cd bash
+  790  cd bash_exercises
+  791  bash big_files.sh .
+  792  bash big_files.sh ~
+  793  bash big_files.sh /~
+  794  bash big_files.sh /home/vera
+  795  bash big_files.sh /home
+  796  bash big_files.sh /
+  797  bash big_files.sh /home/vera
+  798  bash big_files.sh /home
+  799  bash big_files.sh /
+  800  bash big_files.sh /home/vera
+  801  bash big_files.sh /home
+  802  bash big_files.sh /
+  803  chmode 777 scriptFiles 
+  804  chmod 777 scriptFiles 
+  805  ls
+  806  cd ScriptsExamples/
+  807  ls
+  808  cd changingPermittions/
+  809  ls
+  810  chmod 777 scriptFiles 
+  811  ls
+  812  ls *.sh
+  813  cd /home/vera/1test/"Untitled Folder 2"
+  814  bash q10.sh dir1 vv
+  815  if [ !( -d  vv )  ]; then echo No; if [ !( -d  vv )  ]; then echo No;fi
+  816  if [ !( -d  vv )  ]; then echo No;fi
+  817  if [ ! -d  vv   ]; then echo No;fi
+  818  bash q10.sh dir1 vv
+  819  if [ $# != 2 ] &&  [ ! -d  "$1"  ] && [ ! -d  "$2"   ]; then
+  820  if  [ ! -d  dir ] && [ ! -d  vv   ]; then echo "error : must enter exacle two arguments" >&
+  821  if  [ ! -d  dir ] && [ ! -d  vv   ]; then echo "error : must enter exacle two arguments" >&;fi
+  822  if  [ ! -d  dir ] && [ ! -d  vv   ]; then echo "error : must enter exacle two arguments";fi
+  823  bash q10.sh dir1 vv
+  824  bash q10.sh dir1 dir2
+  825  bash q10.sh dir1 dir
+  826  if  [ ! -d  "$1"  ] && [ ! -d  "$2"   ] ; then echo "error: argument 1 and argument 2 must be directory";fi
+  827  bash q10.sh dir1 dir
+  828  bash q10_.sh dir1 dir
+  829  bash q10_.sh dir1 kk
+  830  bash q10_.sh di dir2
+  831  from socket import socket, AF_INET,SOCK_DGRAM
+  832  python3
+  833  from socket import socket, AF_INet, SOCK_DGRAM
+  834  py3
+  835  python3
+  836  from socket import socket, AF_INET, SOCK_DGRAM)
+  837  from socket import socket, AF_INET, SOCK_DGRAM
+  838  py3
+  839  python3
+  840  pwd
+  841  cd Documents
+  842  git clone https://github.com/Slitsan/gitcourse.git
+  843  ls
+  844  cd gitcourse
+  845  ls
+  846  git log
+  847  git remote add origin https://github.com/Slitsan/gitcourse.git
+  848  ls
+  849  touch a
+  850  git add .
+  851  git commit -m "added file a"
+  852  git log
+  853  git pull
+  854  git log
+  855  git push origin main
+  856  ls
+  857  git status
+  858  git pull
+  859  touch bb
+  860  git add .
+  861  git status
+  862  git commit -m "added file bb"
+  863  git push
+  864  git branch
+  865  ping https://github.com/Slitsan/gitcourse
+  866  ping https://github.com
+  867  ping github.com
+  868  ifconfig
+  869  cd
+  870  pwd
+  871  ls .ssh
+  872  ssh-keygen -t rsa -b 4096
+  873  cd .ssh
+  874  ls
+  875  cat id_rsa.pub
+  876  cd
+  877  cd Documents
+  878  cd gitcourse
+  879  ssh -T git@github.com
+  880  git config remote.origin.url git@github.com:Slitsan/gitcourse.git
+  881  history >history
